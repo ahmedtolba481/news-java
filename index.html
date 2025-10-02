@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-center my-4">Notes app</h1>
+    <div class="m-3">
+      <label for="title" class="form-label">titles</label>
+      <input type="text" class="form-control" id="title" />
+    </div>
+    <div class="m-3">
+      <label for="description" class="form-label">description</label>
+      <textarea class="form-control" id="description" rows="3"></textarea>
+    </div>
+    <input type="button"" id="submit" class="btn btn-primary m-3" value="save">
+    <h2 class="text-center my-4">Tasks</h2>
+    <div class="container">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Title</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
